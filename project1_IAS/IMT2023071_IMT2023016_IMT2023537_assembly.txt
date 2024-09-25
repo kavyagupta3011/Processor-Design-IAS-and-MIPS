@@ -1,0 +1,13 @@
+M={n,10,l,s}				# Here n is the number given, l is the length of the number and s is the final sum.
+			
+			memory address
+LOAD M(0) LEN		 //0 		# It takes n and stores in AC. Then it finds the length of the number and stores in AC. 
+STOR M(2) LOAD MQ,M(0)	 //1		# Length is stored in M(2)=l. Then it stores n in MQ.
+
+					# Loop starts
+
+LOAD MQ DIV M(1)	 //2		# Loads MQ to AC and divides the number by 10 (in M(1)). The remainder is stored in AC and quotient is in MQ.
+POWER (M(2)) ADD M(3)	 //3		# Gives value in AC to the power l. Then adds it to the value in (M(3)=s).
+STOR M(3)		 //4		# the value in AC is stored in M(3).
+JUMP m(2,0:19)		 //5		# Goes back to the memory location 2.
+HALT
