@@ -37,3 +37,11 @@ Two projects implemented as part of the Computer Architecture coursework. These 
 
 ---
 
+## **Team Members**
+- Kavya Gupta  
+- Pragya Rai   
+- Ananya Vundavalli   
+- Mannat Kaur Bagga 
+
+---
+
